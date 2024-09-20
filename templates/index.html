@@ -1,0 +1,20 @@
+{{define "content"}}
+<h2>Аккаунты</h2>
+{{if .Accounts}}
+<ul class="accounts-list">
+    {{range $index, $account := .Accounts}}
+    <li>
+        {{$account.Username}}
+        {{if and $.CurrentAccount (eq $account.Username $.CurrentAccount.Username)}}
+        (текущий)
+        {{else}}
+        <a href="/select_account/{{$index}}" class="button">Выбрать</a>
+        {{end}}
+    </li>
+    {{end}}
+</ul>
+{{else}}
+<p>У вас нет добавленных аккаунтов.</p>
+{{end}}
+<a href="/add_account" class="button">Добавить аккаунт</a>
+{{end}}

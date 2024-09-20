@@ -1,0 +1,24 @@
+{{define "content"}}
+<h2>Добавить аккаунт</h2>
+<form action="/add_account" method="post">
+    <label for="username">Email:</label>
+    <input type="email" id="username" name="username" required><br>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="imap_server">IMAP сервер:</label>
+    <input type="text" id="imap_server" name="imap_server" required><br>
+
+    <label for="imap_port">IMAP порт:</label>
+    <input type="number" id="imap_port" name="imap_port" value="993" required><br>
+
+    <label for="smtp_server">SMTP сервер:</label>
+    <input type="text" id="smtp_server" name="smtp_server" required><br>
+
+    <label for="smtp_port">SMTP порт:</label>
+    <input type="number" id="smtp_port" name="smtp_port" value="587" required><br>
+
+    <input type="submit" value="Добавить">
+</form>
+{{end}}

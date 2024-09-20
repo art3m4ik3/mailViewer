@@ -1,0 +1,16 @@
+{{define "content"}}
+<h2>Входящие письма</h2>
+{{if .}}
+<ul class="email-list">
+    {{range .}}
+    <li>
+        <strong>От:</strong> {{.From}}<br>
+        <strong>Тема:</strong> {{.Subject}}<br>
+        <strong>Дата:</strong> {{.Date}}<br>
+    </li>
+    {{end}}
+</ul>
+{{else}}
+<p>Нет входящих писем.</p>
+{{end}}
+{{end}}

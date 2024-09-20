@@ -1,0 +1,27 @@
+{{define "layout"}}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Почтовый клиент</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<header>
+    <h1>Почтовый клиент</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/add_account">Добавить аккаунт</a></li>
+            <li><a href="/fetch_emails">Просмотреть почту</a></li>
+            <li><a href="/send_email">Отправить письмо</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    {{template "content" .}}
+</main>
+<script src="/static/js/script.js"></script>
+</body>
+</html>
+{{end}}

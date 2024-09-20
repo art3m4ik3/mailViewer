@@ -1,0 +1,15 @@
+{{define "content"}}
+<h2>Отправить письмо</h2>
+<form action="/send_email" method="post">
+    <label for="to">Кому:</label>
+    <input type="email" id="to" name="to" required>
+
+    <label for="subject">Тема:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="body">Текст письма:</label>
+    <textarea id="body" name="body" required></textarea>
+
+    <button type="submit" class="button">Отправить</button>
+</form>
+{{end}}

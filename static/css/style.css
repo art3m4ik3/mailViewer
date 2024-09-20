@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+.accounts-list, .email-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.accounts-list li, .email-list li {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.email-list li {
+    border-left: 5px solid #333;
+}
